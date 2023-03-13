@@ -1,0 +1,23 @@
+/* main style sheet for the website */
+
+/* styles applying on all sites */
+:root {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* style for the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 0;
+    padding: 20;
+    color: red;
+    width: 100%
+}
+
+nav:last-of-type{
+    margin-left: auto;
+}
