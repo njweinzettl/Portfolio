@@ -8,16 +8,23 @@
 /* style for the navigation bar */
 nav {
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
-    margin: 0;
     padding: 20;
-    color: red;
-    width: 100%
+    color: white;
+    width: 100%;
+    background: #111;
 }
 
-nav:last-of-type{
+nav ul{
+    list-style: none;
+    display: flex;
+    max-width: 1200;
+}
+
+nav ul li:last-of-type{
     margin-left: auto;
 }

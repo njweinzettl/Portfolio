@@ -1,6 +1,8 @@
 <nav>
-    <a href="/">Home</a>
-    <a href="/about">About Me</a>
-    <a href="/projects">Projects</a>
-    <a href="/contactme">Contact Me</a>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contactme">Contact Me</a></li>
+    </ul>
 </nav>
