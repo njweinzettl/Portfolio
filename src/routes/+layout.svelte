@@ -5,9 +5,8 @@
     import Footer from "../lib/footer.svelte";
 </script>
 
-
 <!-- include Nav bar -->
-<Navigation />
+<!-- <Navigation /> -->
 
 <div>
     <slot></slot>

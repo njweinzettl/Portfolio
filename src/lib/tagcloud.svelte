@@ -1,34 +1,30 @@
-<!-- This component is a tag cloud consisting of tags a project can be labeled with -->
-<!-- The cloud functions as a filter for the projects -> filterable accoirding to the tags -->
+<!-- this component is a tag cloud consisting of tags a project can be labeled with -->
+<!-- the cloud functions as a filter for the projects -> filterable accoirding to the tags -->
 
-<!-- Setting up the single tags in a list -->
+<!-- setting up the single tags in a list -->
 <div>
-    <ul>
-        <li><button data-filter="ping" data-filter-tag="UX">UX design</button></li>
-        <li><button data-filter="ping" data-filter-tag="Product">Product design</button></li>
-        <li><button data-filter="ping" data-filter-tag="Graphic">Graphic design</button></li>
-        <li><button data-filter="ping" data-filter-tag="Infovis">Information visulaisation</button></li>
-    </ul>
+    <button data-filter="ping" data-filter-tag="UX">UX design</button>
+    <button data-filter="ping" data-filter-tag="Product">Product design</button>
+    <button data-filter="ping" data-filter-tag="Graphic">Graphic design</button>
+    <button data-filter="ping" data-filter-tag="Infovis">Information visulaisation</button>
 </div>
 
-<!-- Styling the tag cloud-->
+<!-- styling the tag cloud-->
 
 <style>
-    /* Flexbox related styles */
-    ul {
+    /* flexbox related styles */
+    div {
         display: flex;
-        flex-wrap: wrap;
     }
 
-    /* Non-flexbox related styles */
-    ul {
-        list-style: none;
-    }
+    /* non-flexbox related styles */
 
-    ul li {
-        padding: 0 10px;
+    button {
+        border: 0;
+        padding: 0.7em 1em;
+        margin: 0em 0.5em 1em 0em; /* top right bottom left */
+        border-radius: 5px; 
         background-color:blanchedalmond;
-        border-radius: 3px;
     }
 
 </style>

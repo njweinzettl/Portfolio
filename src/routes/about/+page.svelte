@@ -1,10 +1,10 @@
 <title> Hi this is me </title>
 
-<div class="main_container">
+<div class="maincontainer">
     <section>
-        <div class="inner-container">
-          <h2 class="about-title">Hi, I am Nadja</h2>
-          <div class="about-subtitle">
+        <div class="innercontainer">
+          <h2 class="abouttitle">Hi, I am Nadja</h2>
+          <div class="aboutsubtitle">
               <p>
                 UX Designer and Technology enthusiast.
               </p>
@@ -18,21 +18,21 @@
  </div>
  
  <style>
-    .main_container {
+    .maincontainer {
         margin: 0 80px 0 65px;
     }
  
-    .about-title {
+    .abouttitle {
         font-size: 4.2rem;
         font-weight: bold;
         margin-top: 11rem;
     }
  
-    .about-subtitle {
+    .aboutsubtitle {
         margin-top: -2rem;
     }
  
-    .about-subtitle >p {
+    .aboutsubtitle >p {
         width: 60%;
         font-weight: normal;
         font-size: 1rem;

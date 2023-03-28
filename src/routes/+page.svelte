@@ -1,5 +1,13 @@
 <script>
-    import Video from "../lib/video.svelte"
+    import Navigation from "$lib/navigation.svelte";
+    import Video from "../lib/video.svelte";
 </script>
 
-<Video />
+<header>
+    <div class="header">
+        <Navigation />
+        <div>
+            <Video/> 
+        </div>
+    </div>
+</header>

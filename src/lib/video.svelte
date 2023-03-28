@@ -3,6 +3,8 @@
 
 <style>
     video {
+       object-fit: cover;
+       z-index: -10;
        width: 100%;
     }
 </style>
