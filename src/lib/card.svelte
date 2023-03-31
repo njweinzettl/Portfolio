@@ -6,6 +6,9 @@
 </script>
 
 <!-- building a card -->
+
+
+
 <div class="card"> 
     <h2> This is my first project </h2>
     <Tagcloud />
@@ -17,8 +20,8 @@
 <style>
     .card {
         padding: 2rem;
-        width: 100%
-
+        width: 100%;
+        border-radius: 5px; 
     }
 </style>
 

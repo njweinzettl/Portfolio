@@ -1,10 +1,13 @@
-<video src="../video.mp4" autoplay muted loop>
+<video src="../video.mp4" autoplay muted loop playsinline>
 </video>
 
 <style>
     video {
        object-fit: cover;
        z-index: -10;
-       width: 100%;
+       width: 100vw;
+       position: fixed;
+       top: 0;
+       left: 0;
     }
 </style>

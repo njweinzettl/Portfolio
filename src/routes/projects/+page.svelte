@@ -4,7 +4,12 @@
 
 <div class="allprojects">
     <h1> Projects </h1>
-    <Card />
+
+    
+    <Card>
+        <img src="./static/pic.png" alt="background"/>
+    </Card>
+
     <Card />
     <Card />
 </div>
