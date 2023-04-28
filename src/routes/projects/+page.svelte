@@ -2,22 +2,24 @@
     import Card from "$lib/card.svelte"; // import the cards to represent a single project
 </script>
 
-<div class="allprojects">
-    <h1> Projects </h1>
-
+<body>
+    <div class="allprojects">
+        <h1> Projects </h1>
+        <Card>
+            <img src="./static/pic.png" alt="background"/>
+        </Card>
     
-    <Card>
-        <img src="./static/pic.png" alt="background"/>
-    </Card>
-
-    <Card />
-    <Card />
-</div>
+        <Card />
+        <Card />
+    </div>
+</body>
 
 <style>
+
     .allprojects {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* make grid responsive */
+        grid-auto-flow: row;
         grid-gap: 30px;
     }
 

@@ -6,11 +6,12 @@
 </script>
 
 <!-- include Nav bar -->
-<!-- <Navigation /> -->
-
-<div>
-    <slot></slot>
-</div>
-
-<!-- include Footer -->
-<Footer />
+<body>
+    <Navigation />
+    <div>
+        <slot></slot>
+    </div>
+    
+    <!-- include Footer -->
+    <Footer />
+</body>

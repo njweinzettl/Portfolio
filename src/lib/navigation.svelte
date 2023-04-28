@@ -13,7 +13,7 @@
 <!-- CSS styling for the navigation bar -->
 <style>
     nav {
-        position: fixed;
+        position: absolute;
         justify-content: left;
         left: 3em;
         display: flex;

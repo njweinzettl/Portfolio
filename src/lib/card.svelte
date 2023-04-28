@@ -7,21 +7,23 @@
 
 <!-- building a card -->
 
-
-
-<div class="card"> 
-    <h2> This is my first project </h2>
-    <Tagcloud />
-    <a href="https://github.com/njweinzettl/Portfolio" data-tags="UX design"> 
-        See more!
-    </a>
-</div>
+<body>
+    <div class="card"> 
+        <h2> This is my first project </h2>
+        <Tagcloud />
+        <a href="https://github.com/njweinzettl/Portfolio" data-tags="UX design"> 
+            See more!
+        </a>
+    </div>
+</body>
 
 <style>
     .card {
-        padding: 2rem;
-        width: 100%;
-        border-radius: 5px; 
+        padding: 1.5rem;
+        max-width: 960px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 </style>
 

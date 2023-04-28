@@ -18,22 +18,13 @@
  </div>
  
  <style>
-    .maincontainer {
-        margin: 0 80px 0 65px;
-    }
- 
     .abouttitle {
         font-size: 4.2rem;
         font-weight: bold;
-        margin-top: 11rem;
-    }
- 
-    .aboutsubtitle {
-        margin-top: -2rem;
     }
  
     .aboutsubtitle >p {
-        width: 60%;
+        width: 100%;
         font-weight: normal;
         font-size: 1rem;
         line-height: 2rem;
