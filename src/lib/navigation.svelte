@@ -18,7 +18,6 @@
 </header>
 
 
-
 <!-- CSS styling for the navigation bar -->
 <style>
     nav {

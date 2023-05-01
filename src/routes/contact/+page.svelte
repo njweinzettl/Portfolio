@@ -1,23 +1,43 @@
-<form method = "POST" action = "/contact">
+<!-- Contact form -->
+<div>
     <label>
         Name
-        <input name = "name" type = "name">
+        <input type ="text" bind:value="{name}"/>
     </label>
     <label>
         Email
-        <input name = "email" type = "email">
+        <input type ="text" bind:value="{email}"/>
     </label>
     <label>
         Message
-        <input name = "message" type = "message">
+        <input type ="text" bind:value="{message}"/>
     </label>
-    <button>Send</button>
-</form>
+    <button on:click={sendPost}>Send</button>
+</div>
 
-<style>
-    label {
-        display: grid;
-        max-width: 100%;
-        margin-top: 0.25rem;
+<!-- Post data of contact form to google forms -->
+<script>
+    const url = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfP8FWKBmhKi5CCaQ2UOjO8UthLP9hEwZ4JpcI-IZaKzG7YJg/formResponse';
+
+    let name = "";
+    let email = "";
+    let message = "";
+
+    // Function to post data
+    let sendPost = () => {
+        let data =`entry.927853139=${name}&entry.956718180=${email}&entry.99754670=${message}`;
+
+        console.log("sending", data);
+        fetch(url,{
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: data
+        })
+        .then(res => {
+            console.log("done")
+        });
     }
-</style>
+</script>
