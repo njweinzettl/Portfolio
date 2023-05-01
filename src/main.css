@@ -7,8 +7,7 @@
 
 body {
     display: grid;
-    margin-left: 10%;
-    max-width: 960px;
+    margin: auto;
+    max-width: 1200px;
     width: 100%;
-    background-color:;
 }
