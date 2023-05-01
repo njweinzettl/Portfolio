@@ -1,6 +1,9 @@
 <footer>
-    <div class="socialmedia">Social media icons</div>
-    <div class="copyright">Copyright 2023 Nadja Weinzettl</div>
+    <div class="socialmedia">
+        <p>Social media icons</p>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2023 Nadja Weinzettl</p></div>
 </footer>
 
 <style>

@@ -6,8 +6,18 @@
 }
 
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     max-width: 1200px;
     width: 100%;
+}
+
+button {
+    border: 0;
+    padding: 0.7em 1em;
+    margin: 5em 0.5em 1em 0em; /* top right bottom left */
+    border-radius: 5px; 
+    background-color: rgb(99,143,157);
+    color: snow;
 }

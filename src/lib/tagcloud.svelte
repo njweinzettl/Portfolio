@@ -20,11 +20,7 @@
     /* non-flexbox related styles */
 
     button {
-        border: 0;
-        padding: 0.7em 1em;
-        margin: 0em 0.5em 1em 0em; /* top right bottom left */
-        border-radius: 5px; 
-        background-color:blanchedalmond;
+        background-color: rgb(238, 236, 236);
     }
 
 </style>
