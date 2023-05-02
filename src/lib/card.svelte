@@ -20,7 +20,8 @@
 <style>
     .card {
         padding: 1.5rem;
-        max-width: 960px;
+        max-width: 550px;
+        max-height: 600px;
         border-radius: 5px;
         background-color: snow;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
