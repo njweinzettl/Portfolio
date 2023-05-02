@@ -15,12 +15,14 @@
 </body>
 
 <style>
-
     .allprojects {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* make grid responsive */
+        margin-left: 120px;
+        margin-top: 80px;
+        grid-template-columns: 1fr 1fr;/* make grid responsive */
         grid-auto-flow: row;
-        grid-gap: 30px;
+        grid-gap: 40px;
+        
     }
 
 </style>

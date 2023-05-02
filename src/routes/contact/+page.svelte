@@ -73,9 +73,6 @@
     .messageDiv{
         height:100px;
         width:350px;
-        border-color: rgb(233, 233, 234);
-        border-radius: 2px;
-        border-width: 1px;
     }
 
     .sendPostButton{
