@@ -1,5 +1,8 @@
-<video src="../fireflies.mp4" autoplay muted loop playsinline>
-</video>
+<body>
+    <div>
+        <video src="../fireflies.mp4" autoplay muted loop playsinline></video>
+    </div>
+</body>
 
 <style>
     video {

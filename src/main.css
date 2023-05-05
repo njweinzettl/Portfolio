@@ -21,3 +21,8 @@ button {
     background-color: rgb(99,143,157);
     color: snow;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
