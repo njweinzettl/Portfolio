@@ -8,7 +8,7 @@
         <Card>
             <img src="./static/pic.png" alt="background"/>
         </Card>
-    
+        
         <Card />
         <Card />
     </div>

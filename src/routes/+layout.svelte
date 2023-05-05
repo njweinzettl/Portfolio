@@ -6,9 +6,13 @@
     import Footer from "../lib/footer.svelte";
 </script>
 
-<!-- build  default body -->
-<body>
+<!-- build  default layout -->
+
+<header>
     <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
+</header>
+
+<body>
     <div>
         <slot></slot>
     </div>

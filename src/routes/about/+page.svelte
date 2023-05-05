@@ -1,21 +1,23 @@
-<title> Hi this is me </title>
-
-<div class="maincontainer">
+<body>
+  <title> Hi this is me! </title>
+  <div class="maincontainer">
     <section>
-        <div class="innercontainer">
-          <h2 class="abouttitle">Hi, I am Nadja</h2>
-          <div class="aboutsubtitle">
-              <p>
-                UX Designer and Technology enthusiast.
-              </p>
-              <p>
-                Creating magic daily on the internet. You can send me
-                 an email at <span class="info-text">nj.weinzettl@gmail.com</span>
-              </p>
-          </div>
+      <div class="innercontainer">
+        <h2 class="abouttitle">Hi, I am Nadja</h2>
+        <div class="aboutsubtitle">
+            <p>
+              UX Designer and Technology enthusiast.
+            </p>
+            <p>
+              Creating magic daily on the internet. You can send me
+              an email at <span class="info-text">nj.weinzettl@gmail.com</span>
+            </p>
         </div>
-      </section>
- </div>
+      </div>
+    </section>
+  </div>
+</body>
+
  
  <style>
     .abouttitle {

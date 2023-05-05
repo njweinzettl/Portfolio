@@ -26,7 +26,7 @@
     
     <div> 
         <h2> Results </h2>
-        {data.project.results}
+        <p> {data.project.results} </p>
     </div>    
 </body>
 
