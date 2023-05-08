@@ -8,11 +8,11 @@
 
 <!-- build  default layout -->
 
-<header>
-    <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
-</header>
-
 <body>
+    <header>
+        <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
+    </header>
+    
     <div>
         <slot></slot>
     </div>

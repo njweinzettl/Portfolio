@@ -3,13 +3,13 @@
 </script>
 
 <!-- <Navigation {navcolor}/> -->
-<header>
+<body>
     <div class="videobox">
         <div>
             <Video/> 
         </div>
     </div>
-</header>
+ </body>
 
 <style>
     .videobox{

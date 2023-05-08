@@ -24,18 +24,16 @@
 <style>
 
     .wrapper{
-        display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        background-color: rgb(242, 241, 241);
-        margin-left: -120px;
-        margin-right: -120px;
+        
     }
 
     footer{
-        flex-direction: column;
-        padding: 50px 50px 130px 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(242, 241, 241);
+        margin-left: -120px;
+        margin-right: -120px;
+        padding: 50px 50px 80px 50px;
     }
 
     span {
@@ -50,21 +48,15 @@
 
     .slogan p{
         font-size: 2em;
-        grid-column: 1;
-        grid-row: 1;
     }
 
     .copyright{
         padding: 80px 0px 0px;
         text-align: left;
-        grid-column: 1;
-        grid-row: 2;
     }
 
     .socialmedia{
         text-align: right;
-        grid-column: 2;
-        grid-row: 1;
     }
 
     .socialmedia p{
@@ -74,14 +66,12 @@
         padding-bottom: 1em;
     }
 
-    .socialmedia ul{
-        list-style: none;
-        font-size: 1.3em;
-        line-height: 1.4em;
+    a {
+        color: black;
     }
 
     .socialmedia a:hover{
-        color: green;
+        color: rgb(99,143,157);
     }
 
 </style>
