@@ -35,3 +35,15 @@ ul {
     line-height: 1.4em;
     padding-left: 0;
 }
+
+title{
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}

@@ -1,5 +1,6 @@
 <script>
     import Video from "../lib/video.svelte";
+    import Card from "../lib/card.svelte";
 </script>
 
 <!-- <Navigation {navcolor}/> -->
@@ -9,11 +10,8 @@
             <Video/> 
         </div>
     </div>
+    <div class="projectpreview">
+        <Card/>
+        <Card/>
+    </div>
  </body>
-
-<style>
-    .videobox{
-        height: 900px;
-        width: 900px;
-    }
-</style>
