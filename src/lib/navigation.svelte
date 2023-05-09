@@ -30,17 +30,10 @@
 
 <!-- CSS styling for the navigation bar -->
 <style>
-    nav {
-        position: absolute;
-        padding-top: 80px;
-        gap: 10px;
-        background-color: aqua;
-    }
-
     .navcontent{
-        display: flex;
+        display: grid;
         flex-direction: column;
-        background-color: brown;
+        padding: 50px 80px 80px; /* top/left & right/ bottom */
     }
 
     .logo {
@@ -53,6 +46,6 @@
     }
 
     a:hover {
-        color: aliceblue;
+        color: lightyellow;
     }
 </style>

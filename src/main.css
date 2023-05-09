@@ -8,11 +8,12 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 1200px;
-    width: 100%;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1fr 3fr);
 }
 
 button {
@@ -24,7 +25,8 @@ button {
     color: snow;
 }
 
-a{
+a{  
+    font-size: 1em;
     text-decoration: none;
     color: black;
 }
@@ -42,6 +44,17 @@ title{
 
 h1{
     font-size: 2rem;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: 1B1C1E;
+    letter-spacing: 3px;
+}
+
+h3{
+
 }
 
 p {

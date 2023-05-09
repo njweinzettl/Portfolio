@@ -4,14 +4,35 @@
 </script>
 
 <!-- <Navigation {navcolor}/> -->
-<body>
+<main>
     <div class="videobox">
-        <div>
-            <Video/> 
+        <Video/> 
+    </div>
+    <div class="maincontenthome">
+        <h2> Selected work </h2>
+        <div class="projectpreview">
+            <div>
+                <Card/>
+            </div>
+            <div>
+                <Card/>
+            </div>
         </div>
     </div>
-    <div class="projectpreview">
-        <Card/>
-        <Card/>
-    </div>
- </body>
+</main>
+
+
+ <style>
+    .videobox {
+        height: 10vw;
+    }
+    .maincontenthome {
+        background-color: snow;
+        padding: 50px 80px 80px;
+    }
+
+    .projectpreview{
+        display: grid;
+        gap: 30px;
+    }
+ </style>

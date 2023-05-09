@@ -7,24 +7,34 @@
 
 <!-- building a card -->
 
-<body>
-    <div class="card"> 
-        <h2> This is my first project </h2>
-        <Tagcloud />
+
+<div class="card">
+    <div class="cardcontent">
+        <div class="cardpicture">
+
+        </div>
+        <h3> This is my first project </h3>
+        <Tagcloud/>
         <a href="https://github.com/njweinzettl/Portfolio" data-tags="UX design"> 
             See more!
         </a>
     </div>
-</body>
+</div>
+
 
 <style>
     .card {
-        padding: 1.5rem;
-        max-width: 550px;
-        max-height: 600px;
-        border-radius: 5px;
+        max-width: 60rem;
+        max-height: 50rem;
+        border-radius: 0.5rem;
         background-color: snow;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .cardcontent {
+        display: grid;
+        gap: 0.5em;
+        padding: 1.2rem;
     }
 </style>
 

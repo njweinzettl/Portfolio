@@ -21,7 +21,6 @@
 
 <style>
     footer{
-        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
@@ -50,11 +49,6 @@
         font-size: 2em;
     }
 
-    .copyright{
-        padding-top: 7em;
-        text-align: left;
-    }
-
     .socialmedia{
         text-align: right;
     }
@@ -74,4 +68,8 @@
         color: rgb(99,143,157);
     }
 
+    .copyright{
+        padding-top: 7em;
+        text-align: left;
+    }
 </style>
