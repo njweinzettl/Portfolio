@@ -1,40 +1,28 @@
-
-<!-- each card represents one single project -->
-
 <script>
-    import Tagcloud from "$lib/tagcloud.svelte"; // to filter the projects according to the tags
+    export let card;
 </script>
 
-<!-- building a card -->
-
-
-<div class="card">
+<div class ="card" style="background: url({card.background})">
     <div class="cardcontent">
-        <div class="cardpicture">
-
-        </div>
-        <h3> This is my first project </h3>
-        <Tagcloud/>
-        <a href="https://github.com/njweinzettl/Portfolio" data-tags="UX design"> 
-            See more!
-        </a>
+        <h1>{card.title}</h1>
+        <p>{card.description}</p>
+        <a href={card.url}></a>
     </div>
 </div>
 
-
 <style>
     .card {
-        max-width: 60rem;
-        max-height: 50rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border-radius: 0.5rem;
-        background-color: snow;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 400px;
+        height: 200px;
     }
 
-    .cardcontent {
-        display: grid;
-        gap: 0.5em;
-        padding: 1.2rem;
+    .cardcontent{
+        bottom: 0;
     }
+
 </style>
-

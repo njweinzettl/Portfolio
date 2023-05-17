@@ -1,11 +1,9 @@
 <script>
     import {page} from '$app/stores';
 
-    // Change nav bar color accordign to loaded page
     export let navcolor; //nav bar default color for all pages
     export let logocolor; //logo default color for all pages
 
-    // Change Logo according to loaded page
 </script>
 
 <!-- Navigation bar -->
@@ -48,4 +46,11 @@
     a:hover {
         color: lightyellow;
     }
+
+    @media (width:460px){
+        .navcontent{
+            display: flex;
+        }
+    }
+
 </style>

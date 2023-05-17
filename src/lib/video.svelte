@@ -4,10 +4,16 @@
 
 <style>
     video {
-        z-index: -10;
+        position: absolute;
+        z-index: -1;
         width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
+        object-fit: cover;
+    }
+
+    @media(max-width:700px){
+        video{
+            width: 100%;
+            height: 100vh;
+        }
     }
 </style>

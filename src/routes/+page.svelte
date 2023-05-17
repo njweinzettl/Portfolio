@@ -1,38 +1,34 @@
 <script>
-    import Video from "../lib/video.svelte";
-    import Card from "../lib/card.svelte";
+    import {page} from '$app/stores';
+    import Navigation from '$lib/Navigation.svelte';
+    import Video from '$lib/video.svelte';
+    import Cardcontainer from '$lib/Cardcontainer.svelte';
+    import {cards} from '$lib/cards.js';
 </script>
 
-<!-- <Navigation {navcolor}/> -->
-<main>
+<header class="wrapperheader">
     <div class="videobox">
-        <Video/> 
+        <Video/>
     </div>
-    <div class="maincontenthome">
-        <h2> Selected work </h2>
-        <div class="projectpreview">
-            <div>
-                <Card/>
-            </div>
-            <div>
-                <Card/>
-            </div>
-        </div>
+    <div class="navbox">
+        <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
     </div>
-</main>
+</header>
 
+<div class="maincontenthome">
+    <h2> Selected work </h2>
+    <div class="projectpreview">
+        <Cardcontainer cards={cards}/>
+    </div>
+</div>
 
  <style>
-    .videobox {
-        height: 10vw;
-    }
+
     .maincontenthome {
-        background-color: snow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 50px 80px 80px;
     }
 
-    .projectpreview{
-        display: grid;
-        gap: 30px;
-    }
  </style>

@@ -1,5 +1,5 @@
 <script>
-    import Card from "$lib/card.svelte"; // import the cards to represent a single project
+    import Card from "$lib/cardold.svelte"; // import the cards to represent a single project
 </script>
 
 <body>

@@ -2,29 +2,28 @@
 <script>
     import {page} from '$app/stores';
     import '../main.css';
-    import Navigation from "../lib/navigation.svelte";
+    import Navigation from '$lib/Navigation.svelte';
     import Footer from "../lib/footer.svelte";
 </script>
 
 <!-- build  default layout -->
 
-<body>
-    <!-- include Header with nav bar on every page -->
-    <header>
-        <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
-    </header>
-    <main class="bodycontent">
-        <!-- include content -->
-            <slot></slot>
-    </main>
-    
+    <!-- include content -->
+    <slot></slot>
+
     <!-- include footer -->
-    <footer>
-        <Footer />
-    </footer> 
-</body>
+    <Footer />
+
+
 
 <style>
+    :global(*){
+        box-sizing:border-box;
+    }
+    
+    body{
+        background-color:rgb(252, 252, 252);
+    }
     .bodycontent{
         display: grid;
         grid-template-columns: repeat(1fr, 1fr);
