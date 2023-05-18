@@ -25,9 +25,7 @@
  <style>
 
     .maincontenthome {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        background-color: snow;
         padding: 50px 80px 80px;
     }
 

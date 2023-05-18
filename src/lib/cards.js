@@ -1,8 +1,8 @@
 export let cards = [
     {
         "title": "Prouse",
-        "description" : "This is a project",
-        "background" : "../Logo.svg",
+        "description" : "Prouse is an university project aiming on getting familiar with the process of making an idea into a prototype.",
+        "background" : "../Prouse1.png",
         "url" : "Picture"
     },
     {

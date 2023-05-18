@@ -12,11 +12,12 @@
 <style>
     .cards{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         gap: 10px;
     }
 
-    @media (width: 600px){
+    @media (max-width: 600px){
         .cards{
            flex-direction: column;
         } 
