@@ -23,10 +23,21 @@
 </div>
 
  <style>
+    .nav{
+        background-color: blue;
+    }
 
     .maincontenthome {
         background-color: snow;
-        padding: 50px 80px 80px;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 480px){
+       .maincontenthome{
+            
+       } 
     }
 
  </style>

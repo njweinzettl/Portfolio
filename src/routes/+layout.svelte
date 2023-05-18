@@ -4,10 +4,14 @@
     import '../main.css';
     import Navigation from '$lib/Navigation.svelte';
     import Footer from "../lib/footer.svelte";
+
 </script>
 
 <!-- build  default layout -->
-
+    <div>
+        <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
+    </div>
+    
     <!-- include content -->
     <slot></slot>
 
