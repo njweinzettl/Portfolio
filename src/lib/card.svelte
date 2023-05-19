@@ -11,7 +11,6 @@
             <a href={card.url}>Find out more</a>
         </div> 
     </div>
-    
 </div>
 
 <style>
