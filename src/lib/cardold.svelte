@@ -2,7 +2,7 @@
 <!-- each card represents one single project -->
 
 <script>
-    import Tagcloud from "$lib/tagcloud.svelte"; // to filter the projects according to the tags
+    import Tagcloud from "$lib/Tagcloud.svelte"; // to filter the projects according to the tags
 </script>
 
 <!-- building a card -->

@@ -3,12 +3,15 @@
 </script>
 
 <div class ="card">
-    <img class="cardimage" src="../Prouse1.png" alt="">
-    <a href={card.url}>Find out more</a>
-    <div class="cardcontent">
-        <h1>{card.title}</h1>
-        <p>{card.description}</p>
+    <div class="overlay">
+        <img src={card.img} alt="">
+        <div class="cardcontent">
+            <h1>{card.title}</h1>
+            <p>{card.description}</p>
+            <a href={card.url}>Find out more</a>
+        </div> 
     </div>
+    
 </div>
 
 <style>
@@ -24,32 +27,44 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         overflow: hidden;
         margin: 40px;
+        cursor: pointer;
     }
 
-    .cardimage {
-        object-fit: cover;
+    .overlay{
+        background-color:black;
+        height: 100%;
+        width: 100%;
+        transition: opacity 0.5s;
+    }
+    :hover .overlay{
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
+    img {
         position: absolute;
+        object-fit: cover;
         width: 100%;
         height: 100%;
-        opacity: 0.9;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
     }
 
-    .cardcontent{
-        color: white;
+    h1, p, a { 
         position: absolute;
-        left: 0;
-        bottom: 0;
+        color: white;
     }
 
     h1{
-        position: absolute;
         inset: auto auto 30px 30px;
-        transition: inset .3s .3s ease-out;
+        transition: inset 0.3s 0.3s ease-out;
+        word-wrap: break-word;
     }
 
     p, a{
         opacity: 0;
-        transition: opacity .3s ease-out;
+        max-width: 80%;
+        transition: opacity 0.3s ease-out;
     }
 
     p{
@@ -60,18 +75,19 @@
         inset: auto auto 40px 30px;
     }
 
-    .cardimage:hover{
-        opacity: 1;
+    :hover img{
+        opacity: 0.7;
+        transition: opacity 0.5s ease-in;
     }
 
-    h1:hover{
+    :hover h1{
         inset: auto auto 220px 30px;
-        transition: inset .3s ease-out;
+        transition: inset 0.3s ease-out;
     }
 
-    p:hover, a:hover{
+    :hover p, :hover a{
         opacity: 1;
-        transition: opacity .5s .1s ease-in;
+        transition: opacity 0.5s 0.1s ease-in;
     }
 
     @media (max-width: 480px){
@@ -80,16 +96,8 @@
             margin: 0;
         }
 
-        .cardimage{
-            position:relative;
-        } 
-    }
-
-    @media (max-width: 1024px){
-        .card{
+        img{
+            position: relative;
         }
-        
-        .cardimage{
-        } 
     }
 </style>

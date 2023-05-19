@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        
     }
 
     @media (max-width: 480px){

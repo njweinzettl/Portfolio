@@ -3,7 +3,7 @@
     import {page} from '$app/stores';
     import '../main.css';
     import Navigation from '$lib/Navigation.svelte';
-    import Footer from "../lib/footer.svelte";
+    import Footer from "../lib/Footer.svelte";
 
 </script>
 
