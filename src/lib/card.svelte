@@ -19,7 +19,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         position: relative;
         width: 36rem;
         height: 24rem;
@@ -71,7 +70,8 @@
         inset: auto auto 80px 30px;
     }
 
-    a{
+    a{  
+        font-style: oblique;
         inset: auto auto 40px 30px;
     }
 
@@ -91,7 +91,7 @@
     }
 
     @media (max-width: 480px){
-        .card{
+        .card {
             width: 100%;
             margin: 0;
         }

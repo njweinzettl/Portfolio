@@ -1,27 +1,24 @@
 <script>
-    import Card from "$lib/cardold.svelte"; // import the cards to represent a single project
+    import Cardcontainer from "$lib/Cardcontainer.svelte";
+    import {cards} from '$lib/cards.js';
 </script>
 
-<body>
-    <div class="allprojects">
-        <h1> Projects </h1>
-        <Card>
-            <img src="./static/pic.png" alt="background"/>
-        </Card>
-        
-        <Card />
-        <Card />
+<div class="allprojects">
+    <h2> All projects </h2>
+    <div class="projectpreview">
+        <Cardcontainer cards={cards}/>
     </div>
-</body>
+</div>
 
 <style>
     .allprojects {
-        margin: 80px auto;
-        display: flex;
-        flex-direction: column;
-        column-count: auto;
-        column-gap: 30px;
-        row-gap: 30px;
+        background-color: snow;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    h2{
+        text-align: center;
     }
 
 </style>

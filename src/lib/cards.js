@@ -1,14 +1,14 @@
 export let cards = [
     {
         "title": "Prouse",
-        "description" : "Prouse is an university project aiming on getting familiar with the process of making an idea into a prototype.",
+        "description" : "Prouse was a university project created for a Design, Process, and Prototyping class. The task required students to complete the design process from ideation to prototype in one semester.",
         "img" : "../Prouse1.png",
-        "url" : "Picture"
+        "url" : "/projects"
     },
     {
         "title": "Informationvisualisation",
-        "description" : "Ein Projekt ejrpfewrhofjfneprngejkfernfkelrnglekrjgnlekrjnflkejrnflwkjenlkjnflrkwlejfneklwjfnklwjnflekjfnlwkjernflkwjefnlwkjnerlkfn",
-        "img" : "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BCED452AF9DF94603B00DC7FAFD4269F7360A16D0C9E8590950F3BC27183682D/scale?width=1200&aspectRatio=1.78&format=jpeg",
-        "url" : "Bild"
+        "description" : "This project is based on the lecture Information Visualization within the masters program in Human-Centered Computing at FH Hagenberg. The task was to explore and visualize a dataset in a useful and scientific approach while taking into account design principles of data visualization.",
+        "img" : "../Infovis.png",
+        "url" : "/projects"
     }
 ]

@@ -1,7 +1,7 @@
 <script>
     import {page} from '$app/stores';
     import Navigation from '$lib/Navigation.svelte';
-    import Video from '$lib/Video.svelte';
+    import Video from '$lib/video.svelte';
     import Cardcontainer from '$lib/Cardcontainer.svelte';
     import {cards} from '$lib/cards.js';
 </script>
@@ -23,10 +23,6 @@
 </div>
 
  <style>
-    .nav{
-        background-color: blue;
-    }
-
     .maincontenthome {
         background-color: snow;
         align-items: center;
@@ -34,10 +30,8 @@
         padding-bottom: 20px;
     }
 
-    @media (max-width: 480px){
-       .maincontenthome{
-            
-       } 
+    h2{
+        text-align: center;
     }
 
  </style>
