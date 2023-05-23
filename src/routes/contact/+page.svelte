@@ -5,15 +5,15 @@
         <h1> Get in touch </h1>
         <label>
             <p> Name </p>
-            <input class="detailsDiv" type ="text" bind:value="{name}" placeholder="Your name goes here"/>
+            <input class="detailsDiv" type ="text" bind:value="{name}" placeholder="Your name goes here" required/>
         </label>
         <label>
             <p> Email </p>
-            <input class="detailsDiv" type ="text" bind:value="{email}" placeholder="Your email goes here"/>
+            <input class="detailsDiv" type ="email" bind:value="{email}" placeholder="Your email goes here" required/>
         </label>
         <label>
             <p> Message </p>
-            <input class="messageDiv" type ="text" bind:value="{message}" placeholder="Your message goes here"/>
+            <input class="messageDiv" type ="message" bind:value="{message}" placeholder="Your message goes here" required/>
         </label>
         <button class="sendPostButton" on:click={sendPost}>Send</button>
     </div>
@@ -27,6 +27,8 @@
     let name = "";
     let email = "";
     let message = "";
+
+    let feedback = "";
 
     // Function to post data
     let sendPost = () => {
@@ -44,6 +46,10 @@
         .then(res => {
             console.log("done")
         });
+    }
+
+    let showFeedback = () => {
+
     }
 </script>
 
