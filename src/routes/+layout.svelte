@@ -2,15 +2,12 @@
 <script>
     import {page} from '$app/stores';
     import '../main.css';
-    import Navigation from '$lib/Navigation.svelte';
-    import Footer from "../lib/Footer.svelte";
-
+    import Footer from '$lib/footer.svelte';
+    import Header from '$lib/Header.svelte';
 </script>
 
 <!-- build  default layout -->
-    <div>
-        <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
-    </div>
+    <Header/>
     
     <!-- include content -->
     <slot></slot>
@@ -25,6 +22,7 @@
         box-sizing:border-box;
     }
     
+    /*
     body{
         background-color:rgb(252, 252, 252);
     }
@@ -41,5 +39,5 @@
     .bodycontent > main{
         grid-column: 2 / 4;
         grid-row: 2;
-    }
+    }*/
 </style>

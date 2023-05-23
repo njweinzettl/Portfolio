@@ -1,9 +1,7 @@
 <script>
-    import {page} from '$app/stores';
-
+    import Video from "./video.svelte";
     export let navcolor; //nav bar default color for all pages
     export let logocolor; //logo default color for all pages
-
 </script>
 
 <!-- Navigation bar -->

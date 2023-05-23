@@ -1,6 +1,9 @@
 <script>
     export let data;
+    import Tagcloud from "$lib/Tagcloud.svelte"; // to filter the projects according to the tags
 </script>
+
+<Tagcloud/>
 
 <div class = 'project'>
     <div class = 'introduction'>
