@@ -3,11 +3,12 @@
     import {page} from '$app/stores';
     import '../main.css';
     import Footer from '$lib/footer.svelte';
-    import Header from '$lib/Header.svelte';
+    import Navigation from '$lib/navigation.svelte';
+    import Video from '$lib/video.svelte';
 </script>
 
 <!-- build  default layout -->
-    <Header/>
+    <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} navback={$page.url.pathname.length == 1 ? 'url(../fireflies.gif)' : 'snow'}/>
     
     <!-- include content -->
     <slot></slot>

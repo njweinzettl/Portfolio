@@ -1,3 +1,8 @@
+<!-- 
+    This component is part of the home page. 
+    It is responsible for including a fancy video , 
+-->
+
 <script>
     import Navigation from "$lib/navigation.svelte";
     import {page} from '$app/stores';
@@ -15,8 +20,7 @@
 
 </script>
 
-<div class= 'header'>
-    <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
+<div class= 'header' style="background-image: url(../lib/video.svelte)">
     <h1>Welcome to the <span class="highlight">{words}</span> ever!</h1>
 </div>
 

@@ -1,7 +1,5 @@
 <script>
     import {page} from '$app/stores';
-    import Navigation from '$lib/navigation.svelte';
-    import Video from '$lib/video.svelte';
     import Cardcontainer from '$lib/cardcontainer.svelte';
     import {cards} from '$lib/cards.js';
 </script>
