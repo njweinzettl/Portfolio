@@ -1,5 +1,5 @@
 <script>
-    import Cardcontainer from "$lib/cardcontainer.svelte";
+    import Cardcontainer from "$lib/Cardcontainer.svelte";
     import {cards} from '$lib/cards.js';
 </script>
 

@@ -1,3 +1,7 @@
+/*
+    This js contains the details for the preview of a project in a Card.
+*/
+
 export let cards = [
     {
         "title": "Prouse",

@@ -1,3 +1,8 @@
+<!--
+    This component is a Card displaying a preview of a single project.
+    The card layout is always the same, but the content changes accrodigng to the project (projects content in cards.js).
+-->
+
 <script>
     export let card;
 </script>

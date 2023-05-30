@@ -2,8 +2,8 @@
 <script>
     import {page} from '$app/stores';
     import '../main.css';
-    import Footer from '$lib/footer.svelte';
-    import Navigation from '$lib/navigation.svelte';
+    import Footer from '$lib/Footer.svelte';
+    import Navigation from '$lib/Navigation.svelte';
     import Video from '$lib/video.svelte';
 </script>
 

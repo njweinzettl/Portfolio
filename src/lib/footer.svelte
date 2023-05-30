@@ -1,3 +1,7 @@
+<!--
+    This component is the footer applied on the +layout page.
+-->
+
 <footer>
     <div class="footercontent">
         <div class="slogan">

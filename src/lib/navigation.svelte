@@ -1,5 +1,10 @@
+<!--
+    This component is the navigation bar applied on the +layout page.
+    One speical feature is that the text color, color of the logo and background
+    is white on the home page and black on all other pages. 
+-->
+
 <script>
-    import Video from "./video.svelte";
     export let navcolor; //nav bar default color for all pages
     export let logocolor; //logo default color for all pages
     export let navback; //logo default color for all pages

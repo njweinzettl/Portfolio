@@ -1,5 +1,9 @@
+<!--
+    This component is a container for the single card components applied on the home and projects page.
+-->
+
 <script>
-    import Card from '$lib/card.svelte';
+    import Card from '$lib/Card.svelte';
     export let cards;
 </script>
 
