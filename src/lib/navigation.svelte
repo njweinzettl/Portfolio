@@ -5,6 +5,8 @@
 -->
 
 <script>
+    import Mobilenav from "./Mobilenav.svelte";
+
     export let navcolor; //nav bar default color for all pages
     export let logocolor; //logo default color for all pages
     export let navback; //logo default color for all pages
@@ -15,45 +17,60 @@
     <div class="navcontent" style="background: {navback}">
         <div class="logo">
             <a href="/">
-                <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" style='fill:{logocolor}'><title>Logo_120x102px</title><polygon points="102.1 0.12 101.91 71.24 46 0.21 45.93 27.49 104 102.03 119.74 102.07 120 0.16 102.1 0.12"/><polygon points="45.13 36.79 45.13 36.79 45.13 36.79 45.13 36.79 45.13 36.79 45.13 36.79 45.13 36.79 45.13 36.79 17.9 71.2 17.9 0.07 0 0.07 0 101.98 15.73 101.98 45.13 64.45 45.13 64.45 62.95 87.21 62.95 59.32 45.13 36.79"/></svg>
+                <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" style='fill:{logocolor}'><title>Logo_small</title><polygon points="34.03 0.09 33.97 23.8 15.33 0.12 15.31 9.21 34.67 34.06 39.91 34.07 40 0.1 34.03 0.09"/><polygon points="15.04 12.31 15.04 12.31 15.04 12.31 15.04 12.31 15.04 12.31 15.04 12.31 15.04 12.31 15.04 12.31 5.97 23.78 5.97 0.07 0 0.07 0 34.04 5.25 34.04 15.04 21.53 15.04 21.53 20.98 29.12 20.98 19.82 15.04 12.31"/></svg>
             </a>
         </div>
-        <div class="list">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul class="desktopmenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <!-- Menu for smaller divices from width 900px hidden in bigger version -->
+        <Mobilenav />
     </div>
 </nav>
 
 
 <!-- CSS styling for the navigation bar -->
 <style>
+
     .navcontent{
-        display: grid;
-        flex-direction: column;
-        padding: 50px 80px 80px; /* top/left & right/ bottom */
+        display: flex;
+        padding: 0 2rem;
+        width: 100%;
+        height: 90px;
+        margin: auto;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
     }
 
-    .logo {
-        padding-bottom: 50px;
+    svg{
+        height: 34px;
+        width: 40px;
     }
-
 
     a {
+        font-size: 1rem;
         color: inherit;
     }
 
     a:hover {
-        color: lightyellow;
+        color: rgb(251, 248, 208);
     }
 
-    @media (width:460px){
-        .navcontent{
-            display: flex;
+    .desktopmenu{
+        display: flex;
+        gap: 2rem;
+    }
+
+    
+    /* Responsive design */
+
+    @media (width: 900px){
+        .desktopmenu{
+            display: none;
         }
     }
 
