@@ -1,8 +1,10 @@
 <script>
-    import {page} from '$app/stores';
+    import Words from '$lib/Words.svelte';
     import Cardcontainer from '$lib/cardcontainer.svelte';
     import {cards} from '$lib/cards.js';
 </script>
+
+<Words/>
 
 <div class="maincontenthome">
     <h2> Selected work </h2>

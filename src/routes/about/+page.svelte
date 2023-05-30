@@ -1,12 +1,14 @@
-<body>
-  <title> Hi this is me! </title>
+<script>
+    import Words from "$lib/Words.svelte";
+
+</script>
   <div class="maincontainer">
     <section>
       <div class="innercontainer">
-        <h2 class="abouttitle">Hi, I am Nadja</h2>
         <div class="aboutsubtitle">
             <p>
-              UX Designer and Technology enthusiast.
+              I am Nadja. <br>
+              I am a <Words/>.
             </p>
             <p>
               Creating magic daily on the internet. You can send me
@@ -16,7 +18,7 @@
       </div>
     </section>
   </div>
-</body>
+
 
  
  <style>

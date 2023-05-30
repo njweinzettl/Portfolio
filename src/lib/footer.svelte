@@ -1,4 +1,3 @@
-
 <footer>
     <div class="footercontent">
         <div class="slogan">
