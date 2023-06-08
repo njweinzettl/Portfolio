@@ -28,20 +28,16 @@ Furthermore my lecturer was a great help when I got stuck. You can find his gith
 ## How to use the project
 The project is open to use with no need for authentification. If you like the project you can use it as a template for your own portfolio website. Also you can enhance and change it completely to tailor it to your needs and preferences.
 
-The website is structured
+The website is structured in the home, about, projects, and contact page. All these pages are located in the *routes* folder. The *lib* folder contains all components that were used in one or more sites of the website. The *static* folder contains media used for the single sites such as .png, .svg and .gif.
 
-***insert picture of folder structure***
-
-In terms of design principles I went for a minimalistic aesthetic with a pinch of color. There is a main CSS file included in the project setting the global design principles. Then on each page or component the global design rules are overwritten when different styling was desired. 
-
-***insert picture of main css and a component***
+In terms of design principles I went for a minimalistic aesthetic with a pinch of color. There is a *main.css* file included in the project setting the global design principles. Then on each page or component the global design rules are overwritten when different styling was desired. 
 
 ## Future implementations
 Improvements and features for future implementation in this project could be:
 
 - User test to improve UX
 
-##MIT License
+## MIT License
 
 Copyright (c) [2023] [Nadja Weinzettl]
 
