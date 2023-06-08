@@ -1,38 +1,64 @@
-# create-svelte
+# Portfolio Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Introduction
+This project is part of the "Introduction to Web Development" class at Te Pūkenga - New Zealand Institute of Skills and Technology. It is a Portfolio website for myself to display projects I did in my educational career and provide a contact possibility for future projects and collaboration opportunities.
 
-## Creating a project
+## Technology
+For the development the sveltekit UI framework was used which is based on the open-source front end component framework svelte and supports HTML, CSS and JavaScript. Using this framework was a requirement from the project instructions for the lecturers.
 
-If you're seeing this, you've probably already done this step. Congrats!
+If you are interested in svelte and seveltekit more informations can be found here: 
+- https://svelte.dev/
+- https://kit.svelte.dev/
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Challanges
+While developing the website some challenges were encountered.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. Setting up the API to Google forms
+2. Maintaining responsiveness across the whole website
 
-## Developing
+## Credits
+Several source helped me to solve the just mentioned challenges:
+- https://developer.mozilla.org/en-US/
+- https://kit.svelte.dev/docs/introduction
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+These sources also might help to better comprehend written code in the project; especially the sveltekit specific code.
 
-```bash
-npm run dev
+Furthermore my lecturer was a great help when I got stuck. You can find his github here: https://github.com/dfenders
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## How to use the project
+The project is open to use with no need for authentification. If you like the project you can use it as a template for your own portfolio website. Also you can enhance and change it completely to tailor it to your needs and preferences.
 
-## Building
+The website is structured
 
-To create a production version of your app:
+***insert picture of folder structure***
 
-```bash
-npm run build
-```
+In terms of design principles I went for a minimalistic aesthetic with a pinch of color. There is a main CSS file included in the project setting the global design principles. Then on each page or component the global design rules are overwritten when different styling was desired. 
 
-You can preview the production build with `npm run preview`.
+***insert picture of main css and a component***
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Future implementations
+Improvements and features for future implementation in this project could be:
+
+- User test to improve UX
+
+##MIT License
+
+Copyright (c) [2023] [Nadja Weinzettl]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
