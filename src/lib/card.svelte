@@ -55,19 +55,20 @@
 
     h1, p, a { 
         position: absolute;
-        color: white;
     }
 
     h1{
         inset: auto auto 30px 30px;
         transition: inset 0.3s 0.3s ease-out;
         word-wrap: break-word;
+        color: rgb(50, 50, 50);
     }
 
     p, a{
         opacity: 0;
         max-width: 80%;
         transition: opacity 0.3s ease-out;
+        color: white;
     }
 
     p{
@@ -76,15 +77,17 @@
 
     a{  
         font-style: oblique;
+        text-decoration: underline;
         inset: auto auto 40px 30px;
     }
 
     :hover img{
-        opacity: 0.7;
+        opacity: 0.6;
         transition: opacity 0.5s ease-in;
     }
 
     :hover h1{
+        color: white;
         inset: auto auto 220px 30px;
         transition: inset 0.3s ease-out;
     }
