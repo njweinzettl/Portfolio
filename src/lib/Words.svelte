@@ -6,24 +6,44 @@
 <script>
     import {page} from '$app/stores';
 
-    const highlight = document.getElementById("highlight");
-    let words = "";
-    let wordsarray = ($page.data.words);    
+    let words = "hello";
+    let wordsarray = ($page.data.words);
     let index = 0;
+    let interval = null;
 
-    console.log(words);
- 
-        setInterval(() => {
+    function onOver(){
+        clearInterval(interval);
+        interval = setInterval(() => {
             words = wordsarray[index%wordsarray.length];
             index ++;
         }, 300
         );
+    }
+
+    function onOut(){
+        clearInterval(interval);
+    }
 </script>
 
-<p>User-centered digital products <br> with a pinch of <span class="highlight" id="highlight">{words}</span></p>
+<p>User-centered <br> digital products <br> with a pinch of <span class="highlight" id="highlight" on:mouseover={onOver} on:mouseout={onOut}>{words}</span></p>
 
 <style>
+    p {
+        font-size: 100px;
+    }
     .highlight{
         text-decoration: underline;
     }
+
+    @media(max-width: 1000px){
+        p {
+        font-size: 70px;
+        }  
+    }
+    
+    @media(max-width: 480px){
+        p {
+        font-size: 50px;
+        }
+    } 
 </style>
