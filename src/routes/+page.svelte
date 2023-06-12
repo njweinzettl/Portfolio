@@ -38,13 +38,20 @@
 
     @media(max-width: 1000px){
         .words {
-            margin: 0px 70px;
+            margin: 0px 100px;
         }  
     }
     
     @media(max-width: 480px){
         .words {
             margin: 0px 40px;
+        }
+    } 
+
+    @media(min-width: 1280px){
+        .words {
+            height: 60rem;
+            margin: 0px 150px;
         }
     } 
 

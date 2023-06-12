@@ -6,7 +6,7 @@
 <script>
     import {page} from '$app/stores';
 
-    let words = "hello";
+    let words = "brilliance";
     let wordsarray = ($page.data.words);
     let index = 0;
     let interval = null;
@@ -25,7 +25,7 @@
     }
 </script>
 
-<p>User-centered <br> digital products <br> with a pinch of <span class="highlight" id="highlight" on:mouseover={onOver} on:mouseout={onOut}>{words}</span></p>
+<p>User-centered <br> digital products <br> with a pinch of <br> <span class="highlight" id="highlight" on:mouseover={onOver} on:mouseout={onOut}>{words}</span></p>
 
 <style>
     p {
@@ -44,6 +44,12 @@
     @media(max-width: 480px){
         p {
         font-size: 50px;
+        }
+    } 
+
+    @media(min-width: 1280px){
+        p {
+        font-size: 140px;
         }
     } 
 </style>
