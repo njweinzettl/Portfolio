@@ -2,16 +2,16 @@
     export let data;
 </script>
 
-<div class = 'project'>
-    <div class = 'banner'>
+<div class="project">
+    <div class="banner">
         <img src="{data.project.img1}" alt=""/>
         <div>
             <h1>{data.project.title}</h1>
         </div>
     </div>
-    <div class = 'introduction'>
+    <div class="introduction">
         <p>{data.project.description}</p>
-        <div class = 'details'>
+        <div class="details">
             <p>{data.project.role}</p>
             <img src="{data.project.img2}" alt=""/>
             <p>{data.project.process}</p>
@@ -24,14 +24,14 @@
 
 
 <style>
-    .project {
+    .project{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
     }
 
-    .banner {
+    .banner{
         position: relative;
         height: 24rem;
         overflow: hidden;
@@ -50,7 +50,7 @@
         object-fit: cover;
     }
 
-    .introduction {
+    .introduction{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,24 +59,18 @@
         gap: 50px;
     }
 
-    .details {
+    .details{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: row;
         gap: 20px;
     }
 
-    img{
-        height: 80px;
-    }
+    img{height: 80px;}
 
     @media (max-width: 480px){
-        .project{
-           flex-direction: column;
-        } 
+        .project{flex-direction: column;} 
 
-        .banner h1{
-            position: relative;
-        }
+        .banner h1{position: relative;}
     }
 </style>

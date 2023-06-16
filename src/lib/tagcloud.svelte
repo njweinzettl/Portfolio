@@ -14,14 +14,9 @@
 
 <style>
     /* flexbox related styles */
-    div {
-        display: flex;
-    }
+    div{display: flex;}
 
     /* non-flexbox related styles */
 
-    button {
-        background-color: rgb(238, 236, 236);
-    }
-
+    button{background-color: rgb(238, 236, 236);}
 </style>

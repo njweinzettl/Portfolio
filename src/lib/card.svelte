@@ -7,7 +7,7 @@
     export let card;
 </script>
 
-<div class ="card">
+<div class="card">
     <div class="overlay">
         <img src={card.img} alt="">
         <div class="cardcontent">
@@ -44,7 +44,7 @@
         transition: opacity 0.5s;
     }
 
-    img {
+    img{
         position: absolute;
         object-fit: cover;
         width: 100%;
@@ -53,7 +53,7 @@
         transition: opacity 0.5s ease-out;
     }
 
-    h1, p, a { 
+    h1, p, a{ 
         position: absolute;
     }
 
@@ -71,9 +71,7 @@
         color: white;
     }
 
-    p{
-        inset: auto auto 80px 30px;
-    }
+    p{inset: auto auto 80px 30px;}
 
     a{  
         font-style: oblique;
@@ -98,13 +96,11 @@
     }
 
     @media (max-width: 480px){
-        .card {
+        .card{
             width: 100%;
             margin: 0;
         }
 
-        img{
-            position: relative;
-        }
+        img{position: relative;}
     }
 </style>

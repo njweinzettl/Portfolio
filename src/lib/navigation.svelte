@@ -51,27 +51,21 @@
         width: 40px;
     }
 
-    a {
+    a{
         font-size: 1rem;
         color: inherit;
     }
 
-    a:hover {
-        color: rgb(251, 248, 208);
-    }
+    a:hover{color: rgb(251, 248, 208);}
 
     .desktopmenu{
         display: flex;
         gap: 2rem;
     }
 
-    
     /* Responsive design */
 
     @media (width: 900px){
-        .desktopmenu{
-            display: none;
-        }
+        .desktopmenu{display: none;}
     }
-
 </style>

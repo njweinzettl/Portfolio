@@ -2,22 +2,22 @@
 
 <main>
     <div class="contactform">
-    <h1> Get in touch </h1>
+    <h1>Get in touch</h1>
         <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
-            <label> Name </label>
+            <label>Name</label>
             <input class="details" type ="text" bind:value="{name}" placeholder="Your name goes here" required/>
-            <label> Email </label>
+            <label>Email</label>
             <input class="details" type ="email" bind:value="{email}" placeholder="Your email goes here" required/>
-            <label> Message </label>
+            <label>Message</label>
             <input class="message" type ="message" bind:value="{message}" placeholder="Your message goes here" required/>
-            <button class="sendpostbutton" on:click={()=> submitted = true}> Send </button>
+            <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
         <form/>
         <div class="feedback">
             {#if hasError}
-                <p class="feedbackmessage"> Please fill in all fields </p>
+                <p>Please fill in all fields</p>
             {:else}
                 {#if isSuccessVisible}
-                    <p class="feedbackmessage"> Thank you for contacting me, your message had been sent successfully. I usually get back to messages within 48h! </p>
+                    <p>Thank you for contacting me, your message had been sent successfully. I usually get back to messages within 48h!</p>
                 {/if}
             {/if}
         </div>
@@ -129,8 +129,6 @@
     }
 
     @media (max-width: 480px){
-        .details, .message{
-            width: 100%;
-        }
+        .details, .message{width: 100%;}
     }
 </style>

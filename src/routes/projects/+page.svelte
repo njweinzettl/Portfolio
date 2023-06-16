@@ -4,21 +4,18 @@
 </script>
 
 <div class="allprojects">
-    <h2> All projects </h2>
-    <div class="projectpreview">
+    <h2>All projects</h2>
+    <div>
         <Cardcontainer cards={cards}/>
     </div>
 </div>
 
 <style>
-    .allprojects {
+    .allprojects{
         background-color: snow;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     
-    h2{
-        text-align: center;
-    }
-
+    h2{text-align: center;}
 </style>

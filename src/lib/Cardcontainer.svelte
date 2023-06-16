@@ -21,8 +21,6 @@
     }
 
     @media (max-width: 480px){
-        .cards{
-           flex-direction: column;
-        } 
+        .cards{flex-direction: column;} 
     }
 </style>

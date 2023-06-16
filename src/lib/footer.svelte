@@ -10,13 +10,13 @@
     <div class="socialmedia">
         <p>Follow me</p>
         <ul>
-            <li> <a href="https://www.linkedin.com/in/nadja-weinzettl-941512129/"> LinkedIn </a></li> 
-            <li> <a href="https://www.instagram.com/nj.raw?igshid=YmMyMTA2M2Y="> Instagram </a></li>
-            <li> <a href="https://github.com/njweinzettl"> Github </a></li>
+            <li> <a href="https://www.linkedin.com/in/nadja-weinzettl-941512129/">LinkedIn</a></li> 
+            <li> <a href="https://www.instagram.com/nj.raw?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+            <li> <a href="https://github.com/njweinzettl">Github</a></li>
         </ul>
     </div>
     <div class="copyright">
-        <p><span>© 2023 by Nadja Weinzettl.</span> All rights reserved.</p>
+        <p><span>© 2023 by Nadja Weinzettl.</span>All rights reserved.</p>
     </div>
 </footer>
 
@@ -34,9 +34,7 @@
         background-color: rgb(242, 241, 241);
     }
 
-    span {
-        font-weight: 600;
-    }
+    span{font-weight: 600;}
 
     .slogan svg{
         padding: 0;
@@ -44,13 +42,9 @@
         height: 34px;
     }
 
-    .slogan p{
-        font-size: 2em;
-    }
+    .slogan p{font-size: 2em;}
 
-    .socialmedia{
-        text-align: right;
-    }
+    .socialmedia{text-align: right;}
 
     .socialmedia p{
         list-style: none;
@@ -63,9 +57,7 @@
         color: black;
     }
 
-    .socialmedia a:hover{
-        color: rgb(99,143,157);
-    }
+    .socialmedia a:hover{color: rgb(99,143,157);}
 
     .copyright{
         padding-top: 7em;
@@ -79,12 +71,8 @@
             align-items: center;
         }
 
-        .slogan, .socialmedia, .copyright{
-            text-align: center;
-        }
+        .slogan, .socialmedia, .copyright{text-align: center;}
 
-        .socialmedia p{
-            padding-top: 3em;
-        }
+        .socialmedia p{padding-top: 3em;}
     }
 </style>

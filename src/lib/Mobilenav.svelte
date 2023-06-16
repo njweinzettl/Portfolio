@@ -20,12 +20,12 @@ function mobileNav() {
 </div>
 
 <style>
-.mobilenav {
+.mobilenav{
     display: flex;
     align-items: center;
 }
 
-.hamburgericon {
+.hamburgericon{
     width: 24px;
     height: 2px;
     background-color: white;
@@ -35,7 +35,7 @@ function mobileNav() {
 }
 
 .hamburgericon:before,
-.hamburgericon:after {
+.hamburgericon:after{
     content: "";
     position: absolute;
     width: 100%;
@@ -44,33 +44,27 @@ function mobileNav() {
     transition: transform 0.3s;
 }
 
-.hamburgericon:before {
-    top: -8px;
-}
+.hamburgericon:before{top: -8px;}
 
-.hamburgericon:after {
-    top: 8px;
-}
+.hamburgericon:after{top: 8px;}
 
-.hamburgericon.active {
-    transform: rotate(45deg);
-}
+.hamburgericon.active {transform: rotate(45deg);}
 
-.hamburgericon.active:before {
+.hamburgericon.active:before{
     transform: rotate(90deg);
     top: 0;
 }
 
-.hamburgericon.active:after {
+.hamburgericon.active:after{
     transform: rotate(90deg);
     top: 0;
 }
 
-.linkshidden {
+.linkshidden{
     display: none;
 }
 
-.linksvisible {
+.linksvisible{
     display: block;
     flex-direction: column;
     gap: 0.5rem;

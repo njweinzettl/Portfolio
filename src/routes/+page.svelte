@@ -9,7 +9,7 @@
 </div>
 
 <div class="maincontenthome">
-    <h2> Selected work </h2>
+    <h2>Selected work</h2>
     <div class="projectpreview">
         <Cardcontainer cards={cards}/>
     </div>
@@ -25,27 +25,21 @@
         margin: 0px 130px;
     }
 
-    .maincontenthome {
+    .maincontenthome{
         background-color: snow;
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    h2{
-        text-align: center;
-    }
+    h2{text-align: center;}
 
     @media(max-width: 1000px){
-        .words {
-            margin: 0px 100px;
-        }  
+        .words {margin: 0px 100px;}  
     }
     
     @media(max-width: 480px){
-        .words {
-            margin: 0px 40px;
-        }
+        .words {margin: 0px 40px;}
     } 
 
     @media(min-width: 1280px){
@@ -54,5 +48,4 @@
             margin: 0px 150px;
         }
     } 
-
  </style>
