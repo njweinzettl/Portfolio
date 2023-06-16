@@ -1,36 +1,53 @@
 <!-- Contact form -->
 
-<main class="contactform">
-    <div class="form">
-        <h1> Get in touch </h1>
-        <label>
-            <p> Name </p>
-            <input class="detailsDiv" type ="text" bind:value="{name}" placeholder="Your name goes here" required/>
-        </label>
-        <label>
-            <p> Email </p>
-            <input class="detailsDiv" type ="email" bind:value="{email}" placeholder="Your email goes here" required/>
-        </label>
-        <label>
-            <p> Message </p>
-            <input class="messageDiv" type ="message" bind:value="{message}" placeholder="Your message goes here" required/>
-        </label>
-        <button class="sendPostButton" on:click={sendPost}>Send</button>
+<main>
+    <div class="contactform">
+    <h1> Get in touch </h1>
+        <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
+            <label> Name </label>
+            <input class="details" type ="text" bind:value="{name}" placeholder="Your name goes here" required/>
+            <label> Email </label>
+            <input class="details" type ="email" bind:value="{email}" placeholder="Your email goes here" required/>
+            <label> Message </label>
+            <input class="message" type ="message" bind:value="{message}" placeholder="Your message goes here" required/>
+            <button class="sendpostbutton" on:click={()=> submitted = true}> Send </button>
+        <form/>
+        <div class="feedback">
+            {#if hasError}
+                <p class="feedbackmessage"> Please fill in all fields </p>
+            {:else}
+                {#if isSuccessVisible}
+                    <p class="feedbackmessage"> Thank you for contacting me, your message had been sent successfully. I usually get back to messages within 48h! </p>
+                {/if}
+            {/if}
+        </div>
     </div>
 </main>
 
 
-<!-- Post data of contact form to google forms -->
+<!-- Handling the form -->
 <script>
+
+    // Handling not correctly filled out forms
+    let hasError = false;
+    let isSuccessVisible = false;
+    let submitted = false;
+
+    function handleSubmit(){
+        isSuccessVisible = true;
+        setTimeout(() => {
+            isSuccessVisible = false;
+        }, 4000);
+        sendPost();
+    }
+    
+    // Post data to Google forms
     const url = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfP8FWKBmhKi5CCaQ2UOjO8UthLP9hEwZ4JpcI-IZaKzG7YJg/formResponse';
 
     let name = "";
     let email = "";
     let message = "";
 
-    let feedback = "";
-
-    // Function to post data
     let sendPost = () => {
         let data =`entry.927853139=${name}&entry.956718180=${email}&entry.99754670=${message}`;
 
@@ -47,20 +64,15 @@
             console.log("done")
         });
     }
-
-    let showFeedback = () => {
-
-    }
 </script>
 
 <style>
-    .contactform{
+    main{
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        margin: 40px 0px;
     }
-
-    .form{
+    .contactform{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,47 +84,53 @@
         border-radius: 5px;
     }
 
-    h1{
-        margin-bottom: 30px;
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
-    label{
-        line-height: 2em;
-    }
+    h1{margin-bottom: 30px;}
 
-    .detailsDiv{
+    label{line-height: 2em;}
+
+    .details{
         height: 30px;
         width: 350px;
         border-color: rgb(233, 233, 234);
         border-radius: 2px;
         border-width: 1px;
         margin-bottom: 30px;
+        text-align: center;
     }
 
-    .messageDiv{
+    .message{
         height: 100px;
         width: 350px;
+        text-align: center;
     }
 
-    .sendPostButton{
-        width: 150px;
+    .feedback{
+        margin: 20px;
+        text-align: center;
     }
 
-    .sendPostButton:hover {
-        background-color: #82a5b1;
-    }
+    .sendpostbutton{width: 150px;}
 
-    @media (max-width: 600px){
-        .form {
+    .sendpostbutton:hover{background-color: #82a5b1;}
+
+    @media (max-width: 1000px){
+        .contactform{
             width: 100%;
             margin: 0;
         }
     }
 
     @media (max-width: 480px){
-        .detailsDiv, .messageDiv{
+        .details, .message{
             width: 100%;
         }
     }
-    
 </style>
