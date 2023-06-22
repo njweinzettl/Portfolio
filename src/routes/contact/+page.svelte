@@ -1,28 +1,28 @@
 <!-- Contact form -->
 
-<main>
-    <div class="contactform">
+
+<div class="contactform">
     <h1>Get in touch</h1>
-        <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
-            <label>Name</label>
-            <input class="details" type ="text" bind:value="{name}" placeholder="Your name goes here" required/>
-            <label>Email</label>
-            <input class="details" type ="email" bind:value="{email}" placeholder="Your email goes here" required/>
-            <label>Message</label>
-            <input class="message" type ="message" bind:value="{message}" placeholder="Your message goes here" required/>
-            <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
-        <form/>
-        <div class="feedback">
-            {#if hasError}
-                <p>Please fill in all fields</p>
-            {:else}
-                {#if isSuccessVisible}
-                    <p>Thank you for contacting me, your message had been sent successfully. I usually get back to messages within 48h!</p>
-                {/if}
+    <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
+        <label for="name">Name</label>
+        <textarea class="details" required></textarea>
+        <label for="email">Email</label>
+        <textarea class="details" required></textarea>
+        <label for="message">Message</label>
+        <textarea class="message" required></textarea>
+        <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
+    <form/>
+    <div class="feedback">
+        {#if hasError}
+            <p>Please fill in all fields</p>
+        {:else}
+            {#if isSuccessVisible}
+                <p>Thank you for contacting me, your message had been sent successfully. I usually get back to messages within 48h!</p>
             {/if}
-        </div>
+        {/if}
     </div>
-</main>
+</div>
+
 
 
 <!-- Handling the form -->
@@ -67,16 +67,12 @@
 </script>
 
 <style>
-    main{
-        display: flex;
-        justify-content: center;
-        margin: 40px 0px;
-    }
     .contactform{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: auto;
         position: relative;
         width: 30rem;
         height: 40rem;
@@ -99,9 +95,6 @@
     .details{
         height: 30px;
         width: 350px;
-        border-color: rgb(233, 233, 234);
-        border-radius: 2px;
-        border-width: 1px;
         margin-bottom: 30px;
         text-align: center;
     }

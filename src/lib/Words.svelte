@@ -28,7 +28,10 @@
 <p>User-centered <br> digital products <br> with a pinch of <br> <span class="highlight" id="highlight" on:mouseover={onOver} on:mouseout={onOut}>{words}</span></p>
 
 <style>
-    p{font-size: 100px;}
+    p{
+        font-size: 100px;
+        line-height: 0.9;
+    }
     
     .highlight{text-decoration: underline;}
 

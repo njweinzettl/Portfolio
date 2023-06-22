@@ -20,7 +20,11 @@
         justify-content: center;
     }
 
-    @media (max-width: 480px){
-        .cards{flex-direction: column;} 
+    @media (max-width: 1000px){
+        .cards{
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        } 
     }
 </style>

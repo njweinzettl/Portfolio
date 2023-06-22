@@ -21,7 +21,7 @@ function mobileNav() {
 
 <style>
 .mobilenav{
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -69,5 +69,11 @@ function mobileNav() {
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
+}
+
+@media (max-width: 1000px){
+    .mobilenav{
+        display: flex;
+    }
 }
 </style>

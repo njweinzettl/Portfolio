@@ -11,7 +11,9 @@
     <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} navback={$page.url.pathname.length == 1 ? 'url(../fireflies.gif)' : 'snow'}/>
     
     <!-- include content -->
-    <slot></slot>
+    <main>
+        <slot></slot>
+    </main>
 
     <!-- include footer -->
     <Footer />

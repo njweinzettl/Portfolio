@@ -25,14 +25,10 @@
         margin: 0px 130px;
     }
 
-    .maincontenthome{
-        background-color: snow;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
     }
-
-    h2{text-align: center;}
 
     @media(max-width: 1000px){
         .words {margin: 0px 100px;}  

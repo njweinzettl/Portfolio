@@ -65,7 +65,7 @@
 
     /* Responsive design */
 
-    @media (width: 900px){
+    @media (max-width: 1000px){
         .desktopmenu{display: none;}
     }
 </style>

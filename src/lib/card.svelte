@@ -95,6 +95,15 @@
         transition: opacity 0.5s 0.1s ease-in;
     }
 
+    @media (max-width: 1000px){
+        .card{
+            width: 30rem;
+            margin: 0;
+        }
+
+        img{position: relative;}
+    }
+
     @media (max-width: 480px){
         .card{
             width: 100%;
