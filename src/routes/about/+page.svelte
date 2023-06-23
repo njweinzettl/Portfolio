@@ -1,23 +1,25 @@
 <script>
-    import Words from "$lib/words.svelte";
-
+  import Unsplashapi from "$lib/unsplashapi.svelte";
 </script>
 
-<div class="maincontainer">
-  <section>
+<div>
+    <div class="picture">
+      <Unsplashapi/>
+    </div>
     <div class="innercontainer">
       <div class="aboutsubtitle">
           <p>I am Nadja.</p>
-          <p>Creating magic daily on the internet. You can send me an email at <span class="infotext">nj.weinzettl@gmail.com</span></p>
+          <p>Creating digital magic daily.</p>
       </div>
     </div>
-  </section>
 </div>
 
 <style>
-  .abouttitle{
-      font-size: 4.2rem;
-      font-weight: bold;
+
+  .picture{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
   }
 
   .aboutsubtitle >p{

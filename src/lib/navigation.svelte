@@ -5,6 +5,7 @@
 -->
 
 <script>
+    import {page} from '$app/stores';
     import Mobilenav from "./mobilenav.svelte";
 
     export let navcolor; //nav bar default color for all pages
@@ -27,7 +28,7 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
         <!-- Menu for smaller divices from width 900px hidden in bigger version -->
-        <Mobilenav />
+        <Mobilenav navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'}/>
     </div>
 </nav>
 

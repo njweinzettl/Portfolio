@@ -1,4 +1,5 @@
 <script>
+export let navcolor; //nav bar default color for all pages
 let isopen = false;
 
 function mobileNav() {
@@ -6,8 +7,8 @@ function mobileNav() {
 }
 </script>
 
-<div class="mobilenav">
-    <div class="hamburgericon" class:active={isopen} on:click={mobileNav}></div>
+<nav class="mobilenav">
+    <div class="hamburgericon" class:active={isopen} on:click={mobileNav} style="color: {navcolor}"></div>
         <div class:linkshidden={!isopen} class:linksvisible={isopen}>
             <ul class="mobilemenu">
                 <li><a href="/">Home</a></li>
@@ -16,7 +17,7 @@ function mobileNav() {
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
-</div>
+    </nav>
 
 <style>
 .mobilenav{

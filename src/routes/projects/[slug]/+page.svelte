@@ -27,14 +27,14 @@
     .project{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         gap: 50px;
     }
 
     .banner{
         position: relative;
-        height: 24rem;
+        height: 30rem;
         overflow: hidden;
+        margin-top: -40px;
     }
 
     .banner h1{
