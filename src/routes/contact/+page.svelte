@@ -1,15 +1,18 @@
-<!-- Contact form -->
-
+<!-- 
+    This page contains the content for the contact page. 
+    It consists of the contact form and the api that sends 
+    the entered data to google forms when submitted.
+-->
 
 <div class="contactform">
     <h1>Get in touch</h1>
     <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
         <label for="name">Name</label>
-        <input class="details" type ="text" required>
+        <input class="details" type ="text" bind:value="{name}" required>
         <label for="email">Email</label>
-        <input class="details" type ="email" required>
+        <input class="details" type ="email" bind:value="{email}" required>
         <label for="message">Message</label>
-        <textarea class="message" maxlength="200" required></textarea>
+        <textarea class="message" maxlength="200" bind:value="{message}" required></textarea>
         <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
     <form/>
     <div class="feedback">
@@ -23,22 +26,27 @@
     </div>
 </div>
 
-
-
 <!-- Handling the form -->
 <script>
-
     // Handling not correctly filled out forms
     let hasError = false;
     let isSuccessVisible = false;
     let submitted = false;
 
-    function handleSubmit(){
+    let handleSubmit = () => {
         isSuccessVisible = true;
         setTimeout(() => {
             isSuccessVisible = false;
         }, 4000);
         sendPost();
+        resetInput();
+    }
+
+    const resetInput = async (event) => {
+        const formData = new FormData(event.target)
+
+        console.log([...formData]);
+        event.target.reset();
     }
     
     // Post data to Google forms
@@ -77,6 +85,7 @@
         width: 30rem;
         box-shadow: var(--box-shadow);
         border-radius: 5px;
+        padding-top: 40px;
     }
 
     .form{
