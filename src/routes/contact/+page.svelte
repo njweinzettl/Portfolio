@@ -5,11 +5,11 @@
     <h1>Get in touch</h1>
     <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
         <label for="name">Name</label>
-        <input class="details" required>
+        <input class="details" type ="text" required>
         <label for="email">Email</label>
-        <input class="details" required>
+        <input class="details" type ="email" required>
         <label for="message">Message</label>
-        <textarea class="message" required></textarea>
+        <textarea class="message" maxlength="200" required></textarea>
         <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
     <form/>
     <div class="feedback">
