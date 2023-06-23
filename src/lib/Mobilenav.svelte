@@ -4,32 +4,31 @@ let isopen = false;
 function mobileNav() {
     isopen = !isopen;
 }
-
 </script>
 
 <div class="mobilenav">
     <div class="hamburgericon" class:active={isopen} on:click={mobileNav}></div>
-    <div class:linkshidden={!isopen} class:linksvisible={isopen}>
-        <ul class="mobilemenu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </div>
+        <div class:linkshidden={!isopen} class:linksvisible={isopen}>
+            <ul class="mobilemenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
 </div>
 
 <style>
 .mobilenav{
     display: none;
     align-items: center;
+    cursor: pointer;
 }
 
 .hamburgericon{
     width: 24px;
     height: 2px;
     background-color: white;
-    cursor: pointer;
     position: relative;
     transition: transform 0.3s;
 }
@@ -65,10 +64,17 @@ function mobileNav() {
 }
 
 .linksvisible{
-    display: block;
+    display: absolute;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin: 20rem 1rem 0rem 0rem;
+}
+
+.mobilemenu{
+    background: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+
 }
 
 @media (max-width: 1000px){

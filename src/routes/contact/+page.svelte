@@ -5,9 +5,9 @@
     <h1>Get in touch</h1>
     <form class="form" class:submitted on:submit|preventDefault={handleSubmit}>
         <label for="name">Name</label>
-        <textarea class="details" required></textarea>
+        <input class="details" required>
         <label for="email">Email</label>
-        <textarea class="details" required></textarea>
+        <input class="details" required>
         <label for="message">Message</label>
         <textarea class="message" required></textarea>
         <button class="sendpostbutton" on:click={()=> submitted = true}>Send</button>
@@ -75,7 +75,6 @@
         margin: auto;
         position: relative;
         width: 30rem;
-        height: 40rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 5px;
     }
@@ -103,6 +102,7 @@
         height: 100px;
         width: 350px;
         text-align: center;
+        resize: vertical;
     }
 
     .feedback{
