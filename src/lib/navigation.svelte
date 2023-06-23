@@ -56,7 +56,7 @@
         color: inherit;
     }
 
-    a:hover{color: rgb(251, 248, 208);}
+    a:hover{color: var(--hover-text-color);}
 
     .desktopmenu{
         display: flex;

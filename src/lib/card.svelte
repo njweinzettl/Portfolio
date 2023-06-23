@@ -27,7 +27,7 @@
         width: 36rem;
         height: 24rem;
         border-radius: 0.5rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: var(--box-shadow);
         overflow: hidden;
         margin: 40px;
         cursor: pointer;
@@ -61,14 +61,14 @@
         inset: auto auto 30px 30px;
         transition: inset 0.3s 0.3s ease-out;
         word-wrap: break-word;
-        color: rgb(50, 50, 50);
+        color: var(--dark-text-color);
     }
 
     p, a{
         opacity: 0;
         max-width: 80%;
         transition: opacity 0.3s ease-out;
-        color: white;
+        color: var(--light-text-color);
     }
 
     p{inset: auto auto 80px 30px;}
@@ -85,7 +85,7 @@
     }
 
     :hover h1{
-        color: white;
+        color: var(--light-text-color);
         inset: auto auto 220px 30px;
         transition: inset 0.3s ease-out;
     }

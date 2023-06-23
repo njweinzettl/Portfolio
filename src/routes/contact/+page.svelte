@@ -75,7 +75,7 @@
         margin: auto;
         position: relative;
         width: 30rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: var(--box-shadow);
         border-radius: 5px;
     }
 
@@ -112,7 +112,7 @@
 
     .sendpostbutton{width: 150px;}
 
-    .sendpostbutton:hover{background-color: #82a5b1;}
+    .sendpostbutton:hover{background-color: var(--hover-button-color)}
 
     @media (max-width: 1000px){
         .contactform{
