@@ -1,5 +1,5 @@
 <script>
-    import Words from '$lib/Words.svelte';
+    import Words from '$lib/words.svelte';
     import Cardcontainer from '$lib/Cardcontainer.svelte';
     import {cards} from '$lib/cards.js';
 </script>
@@ -21,8 +21,8 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        height: 40rem;
         margin: 0px 130px;
+        padding-bottom: 120px;
     }
 
     h2{

@@ -40,7 +40,7 @@
     }
     
     @media(max-width: 480px){
-        p{font-size: 50px;}
+        p{font-size: 40px;}
     } 
 
     @media(min-width: 1280px){

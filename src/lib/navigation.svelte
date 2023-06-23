@@ -5,7 +5,7 @@
 -->
 
 <script>
-    import Mobilenav from "./Mobilenav.svelte";
+    import Mobilenav from "./mobilenav.svelte";
 
     export let navcolor; //nav bar default color for all pages
     export let logocolor; //logo default color for all pages
@@ -38,7 +38,7 @@
     .navcontent{
         display: flex;
         padding: 0 2rem;
-        width: 100%;
+        width: 100vw;
         height: 90px;
         margin: auto;
         justify-content: space-between;

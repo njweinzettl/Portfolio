@@ -2,21 +2,20 @@
 <script>
     import {page} from '$app/stores';
     import '../main.css';
-    import Footer from '$lib/Footer.svelte';
-    import Navigation from '$lib/Navigation.svelte';
-    import Video from '$lib/video.svelte';
+    import Footer from '$lib/footer.svelte';
+    import Navigation from '$lib/navigation.svelte';
 </script>
 
 <!-- build  default layout -->
-    <Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} navback={$page.url.pathname.length == 1 ? 'url(../fireflies.gif)' : 'snow'}/>
-    
-    <!-- include content -->
-    <main>
-        <slot></slot>
-    </main>
+<Navigation navcolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} logocolor={$page.url.pathname.length == 1 ? 'snow' : 'black'} navback={$page.url.pathname.length == 1 ? 'url(../fireflies.gif)' : 'snow'}/>
 
-    <!-- include footer -->
-    <Footer />
+<!-- include content -->
+<main>
+    <slot></slot>
+</main>
+
+<!-- include footer -->
+<Footer />
 
 
 

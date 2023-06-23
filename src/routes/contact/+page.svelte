@@ -2,6 +2,8 @@
     This page contains the content for the contact page. 
     It consists of the contact form and the api that sends 
     the entered data to google forms when submitted.
+    
+    This is the URL to the form: https://docs.google.com/forms/d/e/1FAIpQLSfP8FWKBmhKi5CCaQ2UOjO8UthLP9hEwZ4JpcI-IZaKzG7YJg/viewform?usp=sharing
 -->
 
 <div class="contactform">

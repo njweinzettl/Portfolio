@@ -1,5 +1,5 @@
 <script>
-    import Words from "$lib/Words.svelte";
+    import Words from "$lib/words.svelte";
 
 </script>
 

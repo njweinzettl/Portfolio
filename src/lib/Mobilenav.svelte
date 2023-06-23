@@ -71,10 +71,14 @@ function mobileNav() {
 }
 
 .mobilemenu{
-    background: rgb(241, 241, 241);
     border-radius: 5px;
-    padding: 20px;
+    margin: auto;
+    width: 100%;
+    color: var(--light-text-color);
+}
 
+a:hover{
+    color: var(--hover-text-color);
 }
 
 @media (max-width: 1000px){

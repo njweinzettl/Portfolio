@@ -64,7 +64,7 @@
         text-align: left;
     }
 
-    @media (max-width: 460px){
+    @media (max-width: 480px){
         footer{
             display: flex;
             flex-direction: column;
