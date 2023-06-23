@@ -10,32 +10,59 @@ If you are interested in svelte and seveltekit more informations can be found he
 - https://svelte.dev/
 - https://kit.svelte.dev/
 
-## Challanges
-While developing the website some challenges were encountered.
+If you want to set up your own svelte project you can use the following commands:
+$ npm create svelte@latest my-app
+$ cd my-app
+$ npm install
+$ npm run dev -- --open
+
+## Challenges
+While developing the website, some challenges were encountered.
 
 1. Setting up the API to Google forms
 2. Maintaining responsiveness across the whole website
 
 ## Credits
-Several source helped me to solve the just mentioned challenges:
+Several sources helped me to solve the just mentioned challenges:
 - https://developer.mozilla.org/en-US/
 - https://kit.svelte.dev/docs/introduction
+- videos in svelte from the net ninja: https://www.youtube.com/watch?v=9OlLxkaeVvw&t=50s
 
-These sources also might help to better comprehend written code in the project; especially the sveltekit specific code.
+These sources also might help to comprehend written code in the project better; especially the sveltekit specific code.
 
-Furthermore my lecturer was a great help when I got stuck. You can find his github here: https://github.com/dfenders
+Furthermore, my lecturer was a great help when I got stuck while coding. You can find his github here: https://github.com/dfenders
 
 ## How to use the project
-The project is open to use with no need for authentification. If you like the project you can use it as a template for your own portfolio website. Also you can enhance and change it completely to tailor it to your needs and preferences.
+The project is open to use with no need for authentification. If you like the project you can use it as a template for your own portfolio website. Also you can enhance and change it completely to tailor it to your needs and preferences. You can do so by running the following code lines in your terminal:
+$ git clone https://github.com/njweinzettl/Portfolio.git
+$ cd Portfolio
+$ npm install
 
-The website is structured in the home, about, projects, and contact page. All these pages are located in the *routes* folder. The *lib* folder contains all components that were used in one or more sites of the website. The *static* folder contains media used for the single sites such as .png, .svg and .gif.
+Then open the project in your preferred code editor. If you are using visual studio code you can use the following shortcut in the terminal:
+$code .
 
-In terms of design principles I went for a minimalistic aesthetic with a pinch of color. There is a *main.css* file included in the project setting the global design principles. Then on each page or component the global design rules are overwritten when different styling was desired. 
+To open the project in the browser, use the following command:
+$ npm run dev -- --open
+
+Then you are free to transform the whole website however you want.
+
+The website is structured in the home, about, projects, and contact pages. All these pages are located in the *routes* folder. The *lib* folder contains all components that were used in one or more sites of the website. These can be integrated into every page. The *static* folder contains media for single sites such as .png, .svg and .gif.
+
+In terms of design principles I used three websites for inspiration.
+- https://www.agentur-loop.com/ for the home page
+- https://www.samesame.studio/about for the about page
+- https://www.privy.com/contact for the contact form
+
+I went for a minimalistic aesthetic with a pinch of colour in blue, yellow and grey tones. There is a *main.css* file included in the project setting the global design principles. Then on each page or component, the global design rules are overwritten when different styling is desired. 
 
 ## Future implementations
 Improvements and features for future implementation in this project could be:
 
-- User test to improve UX
+- Fancy styling elements
+- Nice javascript transitions
+- Preview of clients
+- Tagcloud
+- Slideshow for project preview
 
 ## MIT License
 
