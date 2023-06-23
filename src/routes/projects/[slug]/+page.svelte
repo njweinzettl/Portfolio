@@ -35,6 +35,8 @@
         height: 30rem;
         overflow: hidden;
         margin-top: -40px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
     .banner h1{
